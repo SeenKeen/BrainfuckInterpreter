@@ -6,43 +6,67 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Compiler.cpp
+/home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.h
+iostream
+-
+string
+-
+memory
+-
+fstream
+-
 Compiler.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Compiler.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Compiler.h
+Interpreter.cpp
+/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Compiler.h
-Executable.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Compiler.h
+Instruction.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
 stack
+-
+utility
 -
 vector
 -
 string
 -
-
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.cpp
-Executable.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.h
-
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.h
-stack
+functional
 -
-Instruction.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Instruction.h
+utility
+-
+stdexcept
+-
+exception
+-
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Instruction.cpp
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.cpp
 Instruction.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Instruction.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
+iostream
+-
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Instruction.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
 vector
 -
-ProgramState.cpp
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/ProgramState.cpp
+ProgramState.h
+/home/denis/CLionProjects/BrainfuckInterpreter/ProgramState.h
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
-Executable.h
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
+Instruction.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
 
-C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/ProgramState.cpp
+/home/denis/CLionProjects/BrainfuckInterpreter/ProgramState.h
+exception
+-
+string
+-
+stdexcept
+-
+
+/home/denis/CLionProjects/BrainfuckInterpreter/main.cpp
+iostream
+-
+BrainfuckConsoleRunner.h
+/home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.h
 

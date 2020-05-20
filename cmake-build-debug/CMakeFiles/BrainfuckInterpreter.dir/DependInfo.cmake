@@ -4,12 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Compiler.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Compiler.cpp.obj"
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Executable.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Executable.cpp.obj"
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Instruction.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.obj"
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/Interpreter.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.obj"
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/ProgramState.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/ProgramState.cpp.obj"
-  "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/main.cpp" "C:/Users/SinkingPC/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/main.cpp.obj"
+  "/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o"
+  "/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
+  "/home/denis/CLionProjects/BrainfuckInterpreter/main.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

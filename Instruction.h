@@ -3,9 +3,10 @@
 #include "ProgramState.h"
 
 class Instruction {
+    // an execution unit and arbitrary node of syntax tree
 public:
     virtual void excecute(ProgramState & memory)=0;
-    virtual bool composite() { return false;}
+    virtual bool composite() { return false;} // returns if the node is a branch
     virtual ~Instruction()=default;
 };
 
@@ -38,6 +39,7 @@ class InstructionPrint : public Instruction {
 };
 
 class CompositeInstruction : public Instruction {
+    // Composite instruction serves as a branch in brainfuck exe syntax tree
 protected:
     std::vector<Instruction*> instructions;
 public:
@@ -56,6 +58,7 @@ public:
 };
 
 class Program : public CompositeInstruction {
+    // intended to be the root of any brainfuck exe
 public:
     void excecute(ProgramState & memory) override;
 };

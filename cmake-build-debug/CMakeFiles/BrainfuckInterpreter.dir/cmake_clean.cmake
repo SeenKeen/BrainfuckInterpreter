@@ -1,14 +1,9 @@
 file(REMOVE_RECURSE
-  "BrainfuckInterpreter.exe"
-  "BrainfuckInterpreter.exe.manifest"
+  "BrainfuckInterpreter"
   "BrainfuckInterpreter.pdb"
-  "CMakeFiles/BrainfuckInterpreter.dir/Compiler.cpp.obj"
-  "CMakeFiles/BrainfuckInterpreter.dir/Executable.cpp.obj"
-  "CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.obj"
-  "CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.obj"
-  "CMakeFiles/BrainfuckInterpreter.dir/ProgramState.cpp.obj"
-  "CMakeFiles/BrainfuckInterpreter.dir/main.cpp.obj"
-  "libBrainfuckInterpreter.dll.a"
+  "CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o"
+  "CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
+  "CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,3 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\BrainfuckInterpreter.dir/objects.a
-C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\ar.exe cr CMakeFiles\BrainfuckInterpreter.dir/objects.a @CMakeFiles\BrainfuckInterpreter.dir\objects1.rsp
-C:\PROGRA~1\HASKEL~1\86E4AC~1.5\mingw\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\BrainfuckInterpreter.dir/objects.a -Wl,--no-whole-archive  -o BrainfuckInterpreter.exe -Wl,--out-implib,libBrainfuckInterpreter.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BrainfuckInterpreter.dir\linklibs.rsp
+/usr/bin/c++  -g   CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o  -o BrainfuckInterpreter 
