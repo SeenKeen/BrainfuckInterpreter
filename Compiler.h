@@ -12,6 +12,7 @@
 class PostExecuter {
     // class for excecuting some action after its destruction
     // MAIN OBJECTIVE : delay execution of certain actions till going out of scope
+
     std::function<void()> action;
 
 public:
