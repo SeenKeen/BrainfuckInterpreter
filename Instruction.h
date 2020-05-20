@@ -45,8 +45,6 @@ protected:
 public:
     void excecute(ProgramState & memory) override=0;
     void appendInstruction(Instruction * instr);
-    auto begin()                            { return instructions.begin(); }
-    auto end()                              { return instructions.end();   }
     std::vector<Instruction*>& children()   { return instructions;         }
     bool composite() override               { return true;                 }
 
