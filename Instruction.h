@@ -5,6 +5,7 @@
 class Instruction {
     // an execution unit and arbitrary node of syntax tree
 public:
+    Instruction()=default;
     virtual void execute(ProgramState & memory)=0;
     virtual bool composite() { return false;} // returns if the node is a branch
     virtual ~Instruction()=default;
@@ -43,6 +44,7 @@ class CompositeInstruction : public Instruction {
 protected:
     std::vector<Instruction*> instructions;
 public:
+    CompositeInstruction()=default;
     void execute(ProgramState & memory) override=0;
     void appendInstruction(Instruction * instr);
     std::vector<Instruction*>& children()   { return instructions;         }

@@ -41,4 +41,5 @@ public:
         }
         return __memory[__pointer];
     }
+    ~ProgramState()=default;
 };
