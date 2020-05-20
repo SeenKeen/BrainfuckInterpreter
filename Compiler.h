@@ -101,7 +101,15 @@ public:
             PostExecuter stack_handler = compiled.second;
             // if instruction is to be added to tree
             if (compiled_instruction) {
-                scopes.back()->appendInstruction(compiled_instruction);
+                try {
+                    scopes.back()->appendInstruction(compiled_instruction);
+                } catch (std::exception & e) {
+                    // in case of exception root will be lost
+                    // so tree destruction is needed to prevent memory leak
+                    delete root;
+                    // rethrow
+                    throw e;
+                }
             }
             // PostExcecuter may perform additional actions to maintain stack
             stack_handler.performAction();
