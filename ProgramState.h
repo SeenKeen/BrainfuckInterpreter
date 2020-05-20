@@ -5,10 +5,12 @@
 #include <stdexcept>
 
 class ProgramState {
+    // Class for maintaining state of brainfuck memory
+    
     using size_t = unsigned int;
     static const size_t memory_size = 30000;
-    int __memory[memory_size];
-    size_t __pointer;
+    int __memory[memory_size];                  
+    size_t __pointer;                           // current position
 
 public:
     ProgramState() {
