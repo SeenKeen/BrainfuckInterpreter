@@ -20,7 +20,7 @@ public:
         __pointer = 0;
     }
 
-    int operator [] (int place) {
+    int operator [] (int place) const {
         if (__pointer >= memory_size) {
             throw std::range_error("Brainfuck memory read out of bounds");
         }
@@ -35,7 +35,7 @@ public:
     size_t& pointer() {
         return __pointer;
     }
-    int current() {
+    int current() const {
         if (__pointer >= memory_size) {
             throw std::range_error("Brainfuck memory read out of bounds");
         }
