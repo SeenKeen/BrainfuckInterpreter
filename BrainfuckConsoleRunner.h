@@ -10,10 +10,11 @@
 class BrainfuckConsoleRunner {
 
     std::string singleCommand() {
+
         std::cout << "*&@!))) ";
-        std::string brainfuck_code;
-        std::cin >> brainfuck_code;
-        return brainfuck_code;
+        std::string user_input;
+        std::getline(std::cin, user_input);
+        return user_input;
     }
     std::string fromFile(std::string& file) {
         FILE * test_open = fopen(file.c_str(), "r");
@@ -40,14 +41,21 @@ public:
         std::cout << "  Input one line of brainfuck instructions or:" << std::endl;
         std::cout << "  Type \"file\" and then path     to load code" << std::endl;
         std::cout << "  Type \"exit\"                   to quit" << std::endl;
-        std::string brainfuck_code = singleCommand();
-        while (brainfuck_code != "exit") {
+        auto extract_first_word = [] (const std::string& line) -> std::string {
+            return line.substr(0, line.find(' '));
+        };
+        std::string user_input = singleCommand();
+        while (extract_first_word(user_input) != "exit") {
             try {
-                if (brainfuck_code == "file") {
-                    std::string filename;
-                    std::cin >> filename;
+                std::string brainfuck_code;
+                // 1. command handling
+                if (extract_first_word(user_input) == "file") {
+                    std::string filename ;
                     brainfuck_code = fromFile(filename);
+                } else {
+                    brainfuck_code = user_input;
                 }
+                // 2. Compilation & interpretation
                 Compiler compiler;
                 Interpreter interpreter;
                 auto exe = std::unique_ptr<Program>(compiler.compile(brainfuck_code));
@@ -59,7 +67,7 @@ public:
                 std::cout << e.what();
             }
             std::cout << std::endl;
-            brainfuck_code = singleCommand();
+            user_input = singleCommand();
         }
     }
     void close() {
