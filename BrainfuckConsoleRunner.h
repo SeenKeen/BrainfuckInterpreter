@@ -37,6 +37,7 @@ class BrainfuckConsoleRunner {
 public:
     void run() {
         std::cout << "  Brainfuck console interpreter" << std::endl;
+        std::cout << "  Input one line of brainfuck instructions or:" << std::endl;
         std::cout << "  Type \"file\" and then path     to load code" << std::endl;
         std::cout << "  Type \"exit\"                   to quit" << std::endl;
         std::string brainfuck_code = singleCommand();
