@@ -40,6 +40,12 @@ stdexcept
 exception
 -
 
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.cpp
+Instruction.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
+iostream
+-
+
 /home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
 vector
 -

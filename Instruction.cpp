@@ -1,36 +1,36 @@
 #include "Instruction.h"
 #include <iostream>
-void InstructionNext::excecute(ProgramState & state) {
+void InstructionNext::execute(ProgramState & state) {
     state.pointer()++;
 }
 
-void InstructionPrev::excecute(ProgramState & state) {
+void InstructionPrev::execute(ProgramState & state) {
     state.pointer()--;
 }
 
-void InstructionIncrement::excecute(ProgramState & state) {
+void InstructionIncrement::execute(ProgramState & state) {
     state.setCurrent(state.current() + 1);
 }
 
-void InstructionDecrement::excecute(ProgramState & state) {
+void InstructionDecrement::execute(ProgramState & state) {
     state.setCurrent(state.current() - 1);
 }
 
-void InstructionPrint::excecute(ProgramState & state) {
+void InstructionPrint::execute(ProgramState & state) {
     std::cout << (char)state.current();
 }
 
-void InstructionCycle::excecute(ProgramState & state) {
+void InstructionCycle::execute(ProgramState & state) {
     while (state.current()) {
         for (Instruction *instr: this->instructions) {
-            instr->excecute(state);
+            instr->execute(state);
         }
     }
 }
 
-void Program::excecute(ProgramState & state) {
+void Program::execute(ProgramState & state) {
     for (Instruction* instr: this->instructions) {
-        instr->excecute(state);
+        instr->execute(state);
     }
 }
 

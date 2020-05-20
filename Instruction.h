@@ -5,7 +5,7 @@
 class Instruction {
     // an execution unit and arbitrary node of syntax tree
 public:
-    virtual void excecute(ProgramState & memory)=0;
+    virtual void execute(ProgramState & memory)=0;
     virtual bool composite() { return false;} // returns if the node is a branch
     virtual ~Instruction()=default;
 };
@@ -13,29 +13,29 @@ public:
 class InstructionNext : public Instruction {
 
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 class InstructionPrev : public Instruction {
 
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 class InstructionIncrement : public Instruction {
 
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 class InstructionDecrement : public Instruction {
 
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 class InstructionPrint : public Instruction {
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 class CompositeInstruction : public Instruction {
@@ -43,7 +43,7 @@ class CompositeInstruction : public Instruction {
 protected:
     std::vector<Instruction*> instructions;
 public:
-    void excecute(ProgramState & memory) override=0;
+    void execute(ProgramState & memory) override=0;
     void appendInstruction(Instruction * instr);
     std::vector<Instruction*>& children()   { return instructions;         }
     bool composite() override               { return true;                 }
@@ -58,11 +58,11 @@ public:
 class Program : public CompositeInstruction {
     // intended to be the root of any brainfuck exe
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };
 
 
 class InstructionCycle : public CompositeInstruction {
 public:
-    void excecute(ProgramState & memory) override;
+    void execute(ProgramState & memory) override;
 };

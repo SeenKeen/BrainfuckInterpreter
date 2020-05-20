@@ -5,6 +5,6 @@ class Interpreter {
     
 public:
     void run(Program & exec) {
-        exec.excecute(state);
+        exec.execute(state);
     }
 };
