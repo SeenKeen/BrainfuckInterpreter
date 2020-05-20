@@ -1,6 +1,9 @@
 #include <iostream>
+#include "BrainfuckConsoleRunner.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    BrainfuckConsoleRunner braifuck;
+    braifuck.run();
+    braifuck.close();
     return 0;
 }

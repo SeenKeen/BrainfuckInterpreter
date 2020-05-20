@@ -3,4 +3,4 @@ project(BrainfuckInterpreter)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BrainfuckInterpreter main.cpp Executable.cpp Executable.h Instruction.cpp Instruction.h ProgramState.cpp Interpreter.cpp Compiler.cpp Compiler.h)
+add_executable(BrainfuckInterpreter main.cpp Instruction.cpp Instruction.h Interpreter.cpp Compiler.h ProgramState.h BrainfuckConsoleRunner.h)

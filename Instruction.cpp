@@ -1,4 +1,5 @@
 #include "Instruction.h"
+#include <iostream>
 void InstructionNext::excecute(ProgramState & state) {
     state.pointer()++;
 }
@@ -8,10 +9,15 @@ void InstructionPrev::excecute(ProgramState & state) {
 }
 
 void InstructionIncrement::excecute(ProgramState & state) {
-    state.current()++;
+    state.setCurrent(state.current() + 1);
 }
+
 void InstructionDecrement::excecute(ProgramState & state) {
-    state.current()--;
+    state.setCurrent(state.current() - 1);
+}
+
+void InstructionPrint::excecute(ProgramState & state) {
+    std::cout << (char)state.current();
 }
 
 void InstructionCycle::excecute(ProgramState & state) {

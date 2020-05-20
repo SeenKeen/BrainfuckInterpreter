@@ -1,9 +1,10 @@
-#include "Executable.h"
+#include "Instruction.h"
 
 class Interpreter {
-    Instruction * currentInstruction;
     ProgramState state;
-    void run(Executable & exec) {
-        
+    
+public:
+    void run(Program & exec) {
+        exec.excecute(state);
     }
 };
