@@ -27,6 +27,7 @@ class Compiler {
     std::vector<CompositeInstruction*> scopes;
 
     std::pair<Instruction*, PostExecuter> make_instruction(char symbol) {
+        // factory method (only for internal use)
         Instruction * result = nullptr;
         std::function<void()> stack_pusher = [] () {};
         switch (symbol) {
@@ -44,6 +45,7 @@ class Compiler {
                 break;
             case '[':
                 result = new InstructionCycle();
+                // after adding to instruction tree this instruction will be added to "call stack"
                 stack_pusher = [&, result] () {
                     scopes.push_back((CompositeInstruction*)result);
                 };
@@ -60,6 +62,7 @@ class Compiler {
         return std::make_pair(result, stack_pusher);
     }
     bool check_code(std::string & code) {
+        // checks whether braces structure of brainfuck code is correct
         int balance = 0;
         for (auto symbol : code) {
             switch(symbol) {
@@ -90,9 +93,11 @@ public:
             }
             auto compiled = make_instruction(symbol);
             Instruction * compiled_instruction = compiled.first;
+            // if instruction is to be added to tree
             if (compiled_instruction) {
                 scopes.back()->appendInstruction(compiled_instruction);
             }
+            // PostExcecuter may perform additional actions to maintain stack
         }
         return root;
     }
