@@ -10,16 +10,17 @@
 
 
 class PostExecuter {
-    // class for excecuting some action after its destruction
-    // MAIN OBJECTIVE : delay execution of certain actions till going out of scope
-
+    // class for delaying excecution of some action
     std::function<void()> action;
 
 public:
     PostExecuter(std::function<void()> action = [] () {}) :
     action(std::move(action)) {};
 
-    ~PostExecuter() { action(); };
+    void performAction() {
+        action();
+    }
+    ~PostExecuter()=default;
 };
 
 
@@ -30,7 +31,7 @@ class Compiler {
     std::pair<Instruction*, PostExecuter> make_instruction(char symbol) {
         // factory method (only for internal use)
         Instruction * result = nullptr;
-        std::function<void()> stack_pusher = [] () {};
+        std::function<void()> stack_handler = [] () {};
         switch (symbol) {
             case '>':
                 result = new InstructionNext();
@@ -47,12 +48,15 @@ class Compiler {
             case '[':
                 result = new InstructionCycle();
                 // after adding to instruction tree this instruction will be added to "call stack"
-                stack_pusher = [&, result] () {
+                stack_handler = [&, result] () {
                     scopes.push_back((CompositeInstruction*)result);
                 };
                 break;
             case ']':
-                scopes.pop_back();
+                // this isntruction must pop current scope from stack
+                stack_handler = [&, result] () {
+                    scopes.pop_back();
+                };
                 break;
             case '.':
                 result = new InstructionPrint();
@@ -60,7 +64,7 @@ class Compiler {
             default:
                 throw std::runtime_error("invalid command");
         }
-        return std::make_pair(result, stack_pusher);
+        return std::make_pair(result, stack_handler);
     }
     bool check_code(std::string & code) {
         // checks whether braces structure of brainfuck code is correct
@@ -94,11 +98,13 @@ public:
             }
             auto compiled = make_instruction(symbol);
             Instruction * compiled_instruction = compiled.first;
+            PostExecuter stack_handler = compiled.second;
             // if instruction is to be added to tree
             if (compiled_instruction) {
                 scopes.back()->appendInstruction(compiled_instruction);
             }
             // PostExcecuter may perform additional actions to maintain stack
+            stack_handler.performAction();
         }
         return root;
     }
