@@ -17,7 +17,8 @@ void InstructionDecrement::execute(ProgramState & state) {
 }
 
 void InstructionPrint::execute(ProgramState & state) {
-    std::cout << (char)state.current();
+    std::cout << (unsigned char)state.current();
+    std::cout.flush();
 }
 
 void InstructionCycle::execute(ProgramState & state) {

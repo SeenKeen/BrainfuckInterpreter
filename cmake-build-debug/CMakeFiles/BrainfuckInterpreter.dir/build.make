@@ -83,34 +83,49 @@ CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/CLionProjects/BrainfuckInterpreter/Instruction.cpp -o CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.s
 
-CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o: CMakeFiles/BrainfuckInterpreter.dir/flags.make
-CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o: ../Interpreter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o -c /home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
+CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o: CMakeFiles/BrainfuckInterpreter.dir/flags.make
+CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o: ../BrainfuckConsoleRunner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o -c /home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.cpp
 
-CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp > CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.i
+CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.cpp > CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.i
 
-CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp -o CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.s
+CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.cpp -o CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.s
+
+CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o: CMakeFiles/BrainfuckInterpreter.dir/flags.make
+CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o: ../UserCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o -c /home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.cpp
+
+CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.cpp > CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.i
+
+CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.cpp -o CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.s
 
 # Object files for target BrainfuckInterpreter
 BrainfuckInterpreter_OBJECTS = \
 "CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o" \
 "CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o" \
-"CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
+"CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o" \
+"CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o"
 
 # External object files for target BrainfuckInterpreter
 BrainfuckInterpreter_EXTERNAL_OBJECTS =
 
 BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o
 BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o
-BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o
+BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o
+BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o
 BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/build.make
 BrainfuckInterpreter: CMakeFiles/BrainfuckInterpreter.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable BrainfuckInterpreter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable BrainfuckInterpreter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BrainfuckInterpreter.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

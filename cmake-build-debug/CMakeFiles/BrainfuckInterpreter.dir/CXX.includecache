@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.cpp
+BrainfuckConsoleRunner.h
+/home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.h
+
 /home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.h
 iostream
 -
@@ -15,10 +19,14 @@ memory
 -
 fstream
 -
+unordered_map
+-
 Compiler.h
 /home/denis/CLionProjects/BrainfuckInterpreter/Compiler.h
-Interpreter.cpp
-/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
+Interpreter.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.h
+UserCommand.h
+/home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.h
 
 /home/denis/CLionProjects/BrainfuckInterpreter/Compiler.h
 Instruction.h
@@ -46,7 +54,7 @@ vector
 ProgramState.h
 /home/denis/CLionProjects/BrainfuckInterpreter/ProgramState.h
 
-/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp
+/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.h
 Instruction.h
 /home/denis/CLionProjects/BrainfuckInterpreter/Instruction.h
 
@@ -57,6 +65,32 @@ string
 -
 stdexcept
 -
+
+/home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.cpp
+UserCommand.h
+/home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.h
+
+/home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.h
+algorithm
+-
+string
+-
+unordered_map
+-
+functional
+-
+utility
+-
+fstream
+-
+memory
+-
+iostream
+-
+Compiler.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Compiler.h
+Interpreter.h
+/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.h
 
 /home/denis/CLionProjects/BrainfuckInterpreter/main.cpp
 iostream

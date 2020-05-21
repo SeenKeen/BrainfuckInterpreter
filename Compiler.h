@@ -1,3 +1,4 @@
+#pragma once
 #include "Instruction.h"
 #include <stack>
 #include <utility>
@@ -66,7 +67,7 @@ class Compiler {
         }
         return std::make_pair(result, stack_handler);
     }
-    bool check_code(std::string & code) {
+    bool check_code(const std::string & code) {
         // checks whether braces structure of brainfuck code is correct
         int balance = 0;
         for (auto symbol : code) {
@@ -86,14 +87,14 @@ class Compiler {
     }
 
 public:
-    Program * compile(std::string & code) {
+    Program * compile(const std::string & code) {
         if (!check_code(code)) {
             throw std::runtime_error("invalid cycles nesting");
         }
         Program * root = new Program;
         scopes = std::vector<CompositeInstruction*> { root };
         for (char symbol : code) {
-            if (symbol == '\n' || symbol == ' ') {
+            if (symbol == '\n' || symbol == ' ' || symbol == '\t') {
                 continue;
             }
             auto compiled = make_instruction(symbol);
@@ -117,4 +118,19 @@ public:
         return root;
     }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

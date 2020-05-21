@@ -1,8 +1,9 @@
 file(REMOVE_RECURSE
   "BrainfuckInterpreter"
   "BrainfuckInterpreter.pdb"
+  "CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o"
   "CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o"
-  "CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
+  "CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o"
   "CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o"
 )
 

@@ -123,6 +123,33 @@ BrainfuckInterpreter/fast:
 	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/build
 .PHONY : BrainfuckInterpreter/fast
 
+BrainfuckConsoleRunner.o: BrainfuckConsoleRunner.cpp.o
+
+.PHONY : BrainfuckConsoleRunner.o
+
+# target to build an object file
+BrainfuckConsoleRunner.cpp.o:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o
+.PHONY : BrainfuckConsoleRunner.cpp.o
+
+BrainfuckConsoleRunner.i: BrainfuckConsoleRunner.cpp.i
+
+.PHONY : BrainfuckConsoleRunner.i
+
+# target to preprocess a source file
+BrainfuckConsoleRunner.cpp.i:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.i
+.PHONY : BrainfuckConsoleRunner.cpp.i
+
+BrainfuckConsoleRunner.s: BrainfuckConsoleRunner.cpp.s
+
+.PHONY : BrainfuckConsoleRunner.s
+
+# target to generate assembly for a file
+BrainfuckConsoleRunner.cpp.s:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.s
+.PHONY : BrainfuckConsoleRunner.cpp.s
+
 Instruction.o: Instruction.cpp.o
 
 .PHONY : Instruction.o
@@ -150,32 +177,32 @@ Instruction.cpp.s:
 	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.s
 .PHONY : Instruction.cpp.s
 
-Interpreter.o: Interpreter.cpp.o
+UserCommand.o: UserCommand.cpp.o
 
-.PHONY : Interpreter.o
+.PHONY : UserCommand.o
 
 # target to build an object file
-Interpreter.cpp.o:
-	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o
-.PHONY : Interpreter.cpp.o
+UserCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o
+.PHONY : UserCommand.cpp.o
 
-Interpreter.i: Interpreter.cpp.i
+UserCommand.i: UserCommand.cpp.i
 
-.PHONY : Interpreter.i
+.PHONY : UserCommand.i
 
 # target to preprocess a source file
-Interpreter.cpp.i:
-	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.i
-.PHONY : Interpreter.cpp.i
+UserCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.i
+.PHONY : UserCommand.cpp.i
 
-Interpreter.s: Interpreter.cpp.s
+UserCommand.s: UserCommand.cpp.s
 
-.PHONY : Interpreter.s
+.PHONY : UserCommand.s
 
 # target to generate assembly for a file
-Interpreter.cpp.s:
-	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.s
-.PHONY : Interpreter.cpp.s
+UserCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/BrainfuckInterpreter.dir/build.make CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.s
+.PHONY : UserCommand.cpp.s
 
 main.o: main.cpp.o
 
@@ -213,12 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... BrainfuckInterpreter"
+	@echo "... BrainfuckConsoleRunner.o"
+	@echo "... BrainfuckConsoleRunner.i"
+	@echo "... BrainfuckConsoleRunner.s"
 	@echo "... Instruction.o"
 	@echo "... Instruction.i"
 	@echo "... Instruction.s"
-	@echo "... Interpreter.o"
-	@echo "... Interpreter.i"
-	@echo "... Interpreter.s"
+	@echo "... UserCommand.o"
+	@echo "... UserCommand.i"
+	@echo "... UserCommand.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/denis/CLionProjects/BrainfuckInterpreter/BrainfuckConsoleRunner.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/BrainfuckConsoleRunner.cpp.o"
   "/home/denis/CLionProjects/BrainfuckInterpreter/Instruction.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Instruction.cpp.o"
-  "/home/denis/CLionProjects/BrainfuckInterpreter/Interpreter.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/Interpreter.cpp.o"
+  "/home/denis/CLionProjects/BrainfuckInterpreter/UserCommand.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/UserCommand.cpp.o"
   "/home/denis/CLionProjects/BrainfuckInterpreter/main.cpp" "/home/denis/CLionProjects/BrainfuckInterpreter/cmake-build-debug/CMakeFiles/BrainfuckInterpreter.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
