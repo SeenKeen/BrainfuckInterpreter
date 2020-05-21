@@ -62,6 +62,12 @@ class Compiler {
             case '.':
                 result = new InstructionPrint();
                 break;
+            case ' ':
+                break;
+            case '\n':
+                break;
+            case '\t':
+                break;
             default:
                 throw std::runtime_error("invalid command");
         }
@@ -94,9 +100,6 @@ public:
         Program * root = new Program;
         scopes = std::vector<CompositeInstruction*> { root };
         for (char symbol : code) {
-            if (symbol == '\n' || symbol == ' ' || symbol == '\t') {
-                continue;
-            }
             auto compiled = make_instruction(symbol);
             Instruction * compiled_instruction = compiled.first;
             PostExecuter stack_handler = compiled.second;
